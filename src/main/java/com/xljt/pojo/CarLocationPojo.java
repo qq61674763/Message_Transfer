@@ -1,5 +1,7 @@
 package com.xljt.pojo;
 
+import org.springframework.stereotype.Component;
+
 import java.io.Serializable;
 
 /**
@@ -8,7 +10,8 @@ import java.io.Serializable;
  * @description : CarLocation
  * @date : 2019/9/12 10:23
  */
-public class CarLocation implements Serializable {
+@Component
+public class CarLocationPojo implements Serializable {
 
     private String locationStatus;
     private String longitude;

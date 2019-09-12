@@ -1,12 +1,15 @@
 package com.xljt.pojo;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author : XU
  * @version : 1.0
  * @description CarData
  * @date : 2019/9/12 10:29
  */
-public class CarData {
+@Component
+public class CarDataPojo {
 
 
     private String carStatus;
