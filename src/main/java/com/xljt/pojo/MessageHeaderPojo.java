@@ -3,7 +3,6 @@ package com.xljt.pojo;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
-import java.util.Map;
 
 /**
  * @author : XU
@@ -42,19 +41,46 @@ public class MessageHeaderPojo implements Serializable {
     /**
      * 数据单元长度
      */
-    private String dataTopicLength;
+    private String dataUnitLength;
+    /**
+     * 年
+     */
+    private String year;
+    /**
+     * 月
+     */
+    private String month;
+    /**
+     * 日
+     */
+    private String day;
+    /**
+     * 时
+     */
+    private String hour;
+    /**
+     * 分
+     */
+    private String minute;
+    /**
+     * 秒
+     */
+    private String second;
     /**
      * 数据信息类型
      */
-    private Map<Integer, String> messageType;
+    private String dataUnitType;
+    /**
+     * 偏移量
+     */
+    private int index;
 
-
-    public String getDataTopicLength() {
-        return dataTopicLength;
+    public String getDataUnitLength() {
+        return dataUnitLength;
     }
 
-    public void setDataTopicLength(String dataTopicLength) {
-        this.dataTopicLength = dataTopicLength;
+    public void setDataUnitLength(String dataUnitLength) {
+        this.dataUnitLength = dataUnitLength;
     }
 
     public String getAnswerTag() {
@@ -105,12 +131,88 @@ public class MessageHeaderPojo implements Serializable {
         this.messageLength = messageLength;
     }
 
-    public Map<Integer, String> getMessageType() {
-        return messageType;
+    public String getDataUnitType() {
+        return dataUnitType;
     }
 
-    public void setMessageType(Map<Integer, String> messageType) {
-        this.messageType = messageType;
+    public void setDataUnitType(String dataUnitType) {
+        this.dataUnitType = dataUnitType;
     }
 
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
+
+    public String getDay() {
+        return day;
+    }
+
+    public void setDay(String day) {
+        this.day = day;
+    }
+
+    public String getHour() {
+        return hour;
+    }
+
+    public void setHour(String hour) {
+        this.hour = hour;
+    }
+
+    public String getMinute() {
+        return minute;
+    }
+
+    public void setMinute(String minute) {
+        this.minute = minute;
+    }
+
+    public String getSecond() {
+        return second;
+    }
+
+    public void setSecond(String second) {
+        this.second = second;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    @Override
+    public String toString() {
+        return "MessageHeaderPojo{" +
+                "messageLength='" + messageLength + '\'' +
+                ", headerFirst='" + headerFirst + '\'' +
+                ", orderTopic='" + orderTopic + '\'' +
+                ", answerTag='" + answerTag + '\'' +
+                ", vin='" + vin + '\'' +
+                ", encryptionType='" + encryptionType + '\'' +
+                ", dataUnitLength='" + dataUnitLength + '\'' +
+                ", year='" + year + '\'' +
+                ", month='" + month + '\'' +
+                ", day='" + day + '\'' +
+                ", hour='" + hour + '\'' +
+                ", minute='" + minute + '\'' +
+                ", second='" + second + '\'' +
+                ", dataUnitType='" + dataUnitType + '\'' +
+                ", index=" + index +
+                '}';
+    }
 }

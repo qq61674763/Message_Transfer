@@ -15,5 +15,6 @@ public interface IMessageHeaderTransform {
      * @param oldMessage 原始完整报文
      * @return
      */
-    public MessageHeaderPojo getMessage(String oldMessage);
+    MessageHeaderPojo getMessageHeader(String oldMessage);
+
 }

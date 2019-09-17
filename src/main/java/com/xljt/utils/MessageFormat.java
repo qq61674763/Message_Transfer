@@ -10,7 +10,6 @@ import java.math.BigInteger;
  * @description : messageFormat <br>
  * @date : 2019/9/12 15:20 <br>
  */
-@Service
 public class MessageFormat {
 
     /**
@@ -19,7 +18,7 @@ public class MessageFormat {
      * @param s 十六进制数值
      * @return 解析完成的字符串
      */
-    public static String numberTransformString(String s) {
+    public static String numberToString(String s) {
         byte[] baKeyword = new byte[s.length() / 2];
         for (int i = 0; i < baKeyword.length; i++) {
             try {
@@ -44,7 +43,7 @@ public class MessageFormat {
      * @param str
      * @return
      */
-    public static String stringTransformNumber(String str) {
+    public static String stringToNumber(String str) {
         char[] chars = "0123456789ABCDEF".toCharArray();
         StringBuilder sb = new StringBuilder("");
         byte[] bs = str.getBytes();
@@ -65,7 +64,7 @@ public class MessageFormat {
      * @param hexs
      * @return
      */
-    public static String numberTransformInt(String hexs) {
+    public static String numberToInt(String hexs) {
         BigInteger bigint = new BigInteger(hexs, 16);
         int number = bigint.intValue();
         return String.valueOf(number);
@@ -77,7 +76,7 @@ public class MessageFormat {
      * @param number
      * @return
      */
-    public static String intTransformNumber(int number) {
+    public static String intToNumber(int number) {
         String hex = Integer.toHexString(number);
         return hex;
     }
