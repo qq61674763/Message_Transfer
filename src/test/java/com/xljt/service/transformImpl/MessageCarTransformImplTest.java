@@ -8,8 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.junit.Assert.*;
-
 /**
  * @author : XU <br>
  * @version : 1.0 <br>
@@ -18,11 +16,11 @@ import static org.junit.Assert.*;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MessageCarTransformImlTest {
+public class MessageCarTransformImplTest {
 
     String message;
     @Autowired
-    private MessageCarTransformIml messageCarTransformIml;
+    private MessageCarTransformImpl messageCarTransformImpl;
 
     @Before
     public void setUp() throws Exception {
@@ -31,7 +29,7 @@ public class MessageCarTransformImlTest {
 
     @Test
     public void getMessageCar() {
-        MessageCarPojo messageCar = messageCarTransformIml.getMessageCar(message, 82);
+        MessageCarPojo messageCar = messageCarTransformImpl.getMessageCar(message, 82);
         System.out.println(messageCar);
     }
 }

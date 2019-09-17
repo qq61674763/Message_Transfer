@@ -28,6 +28,7 @@ public class MessageHeaderTransformImpl implements IMessageHeaderTransform, Seri
      */
     @Override
     public MessageHeaderPojo getMessageHeader(String oldMessage) {
+
         //报文总长度
         messageHeaderPojo.setMessageLength(String.valueOf(oldMessage.length() / 2));
         int index = 0;

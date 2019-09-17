@@ -9,9 +9,11 @@ import com.xljt.pojo.MessageLocationPojo;
  * @date : 2019/9/16 13:55 <br>
  */
 public interface IMessageLocationTransform {
+
     /**
      * 解析车辆定位单元数据
      * @param oldMessage
+     * @param index
      * @return
      */
     MessageLocationPojo getMessageLocation(String oldMessage,int index);

@@ -15,7 +15,7 @@ import java.io.Serializable;
  * @date : 2019/9/16 14:48 <br>
  */
 @Service
-public class MessageCarTransformIml implements IMessageCarTransform, Serializable {
+public class MessageCarTransformImpl implements IMessageCarTransform, Serializable {
 
     @Autowired
     MessageCarPojo messageCarPojo;
