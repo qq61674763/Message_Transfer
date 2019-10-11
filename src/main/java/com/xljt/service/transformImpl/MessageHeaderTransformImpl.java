@@ -4,6 +4,7 @@ import com.xljt.pojo.MessageHeaderPojo;
 import com.xljt.service.IMessageHeaderTransform;
 import com.xljt.utils.MessageFormat;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.io.Serializable;
@@ -67,9 +68,6 @@ public class MessageHeaderTransformImpl implements IMessageHeaderTransform, Seri
         index += 2;
         //秒
         messageHeaderPojo.setSecond(MessageFormat.numberToInt(oldMessage.substring(index, index + 2)));
-        index += 2;
-        //单元类型
-        messageHeaderPojo.setDataUnitType(oldMessage.substring(index, index + 2));
         index += 2;
         messageHeaderPojo.setIndex(index);
         return messageHeaderPojo;

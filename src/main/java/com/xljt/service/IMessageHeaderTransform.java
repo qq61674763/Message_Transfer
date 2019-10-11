@@ -1,12 +1,13 @@
 package com.xljt.service;
 
 import com.xljt.pojo.MessageHeaderPojo;
+import org.springframework.stereotype.Service;
 
 /**
- * @author : XU <br>
- * @version : 1.0 <br>
- * @description : IMessageHeaderTransform <br>
- * @date : 2019/9/12 16:24 <br>
+ * @author : XU
+ * @version : 1.0
+ * @description : IMessageHeaderTransform 头部信息解析
+ * @date : 2019/9/12 16:24
  */
 public interface IMessageHeaderTransform {
 

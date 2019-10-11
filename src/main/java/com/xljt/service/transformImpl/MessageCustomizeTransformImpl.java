@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * @author : XU <br>
- * @version : 1.0 <br>
- * @description : MessageCustomizeTransformImpl <br>
- * @date : 2019/9/17 16:03 <br>
+ * @author : XU
+ * @version : 1.0
+ * @description : MessageCustomizeTransformImpl
+ * @date : 2019/9/17 16:03
  */
 @Service
 public class MessageCustomizeTransformImpl implements IMessageCustomizeTransform {

@@ -53,11 +53,11 @@ public class MessageCarTransformImpl implements IMessageCarTransform, Serializab
         messageCarPojo.setGear(oldMessage.substring(index, index + 2));
         index += 2;
         //绝缘电阻
-        messageCarPojo.setInsulationResistance(MessageFormat.numberToInt(oldMessage.substring(index, index + 2)));
-        index += 2;
+        messageCarPojo.setInsulationResistance(MessageFormat.numberToInt(oldMessage.substring(index, index + 4)));
+        index += 4;
         //预留
-        messageCarPojo.setReserved(oldMessage.substring(index, index + 2));
-        index += 2;
+        messageCarPojo.setReserved(oldMessage.substring(index, index + 4));
+        index += 4;
         //偏移量
         messageCarPojo.setIndex(index);
 

@@ -10,10 +10,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author : XU <br>
- * @version : 1.0 <br>
- * @description : MessagePowerVoltageTransformImpl <br>
- * @date : 2019/9/17 14:34 <br>
+ * @author : XU
+ * @version : 1.0
+ * @description : MessagePowerVoltageTransformImpl
+ * @date : 2019/9/17 14:34
  */
 @Service
 public class MessagePowerVoltageTransformImpl implements IMessagePowerVoltageTransform {

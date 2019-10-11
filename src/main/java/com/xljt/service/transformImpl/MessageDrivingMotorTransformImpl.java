@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service;
 import java.io.Serializable;
 
 /**
- * @author : XU <br>
- * @version : 1.0 <br>
- * @description : MessageDrivingMotorTransformImpl <br>
- * @date : 2019/9/16 16:00 <br>
+ * @author : XU
+ * @version : 1.0
+ * @description : MessageDrivingMotorTransformImpl
+ * @date : 2019/9/16 16:00
  */
 @Service
 public class MessageDrivingMotorTransformImpl implements IMessageDrivingMotorTransform, Serializable {

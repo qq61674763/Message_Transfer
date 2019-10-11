@@ -1,12 +1,13 @@
 package com.xljt.service;
 
 import com.xljt.pojo.MessageLocationPojo;
+import org.springframework.stereotype.Service;
 
 /**
- * @author : XU <br>
- * @version : 1.0 <br>
- * @description : IMessageLocationTransform <br>
- * @date : 2019/9/16 13:55 <br>
+ * @author : XU
+ * @version : 1.0
+ * @description : IMessageLocationTransform 车辆位置解析
+ * @date : 2019/9/16 13:55
  */
 public interface IMessageLocationTransform {
 
