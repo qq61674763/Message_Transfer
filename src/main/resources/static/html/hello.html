@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../vue/vue.js" type="text/javascript" charset="UTF-8"></script>
+</head>
+
+<body>
+    <div id="diva">
+        {{a}}
+    </div>
+    <script>
+        var a = "1111";
+        var vm = new Vue({
+            el: "#diva",
+            data: {
+                a: a
+            }
+        });
+        vm.a = "222222"
+    </script>
+</body>
+
+</html>
